@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8a603ffa06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Innove Brazil</title>
+</head>
+
+<body>
+    <header id="nav">
+        <!-- begin: Navbar -->
+        <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+
+                        <img class="is-pb" src="static/img/innovbrazil-logo-pb.png" width="150" height="30" />
+
+                        <img class="is-colored" src="static/img/innovbrazil-logo.png" width="150" height="30" />
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="/" class="navbar-item">
+                            Home
+                        </a>
+
+                        <a href="/about" class="navbar-item">
+                            Sobre
+                        </a>
+
+                        <a href="/services" class="navbar-item">
+                            Serviços
+                        </a>
+
+                        <a href="/partners" class="navbar-item">
+                            Parceiros
+                        </a>
+
+                        <a href="#contact" class="navbar-item">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end: Navbar -->
+    </header>
+
+    <!-- begin: Content -->
+    <main>
+        <!-- begin: Carousel -->
+        <section class="carousel">
+            <section class="hero carousel__hero is-fullheight">
+                <div class="overlay overlay--filter-black"></div>
+                <div class="carousel-container">
+                    <figure>
+                        <img src="static/img/banner-home.jpg" style="height: 100%" alt="Some image" />
+                    </figure>
+                </div>
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-7">
+                                <h1 class="title is-size-2">{{ currentImageTitle }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+        <!-- end: Carousel -->
+
+        <!-- begin: Partners -->
+        <div class="partners section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img class="is-rounded" src="https://via.placeholder.com/150" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img class="is-rounded" src="https://via.placeholder.com/150" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img class="is-rounded" src="https://via.placeholder.com/150" />
+                        </figure>
+                    </div>
+
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img class="is-rounded" src="https://via.placeholder.com/150" />
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="colums is-centered">
+                    <div class="column">
+                        <div class="has-text-centered mt-6">
+                            <a href="/partners" class="button is-info mt-6">Parceiros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Partners -->
+
+        <!-- begin: About section -->
+        <section class="section about">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-5">
+                        <figure class="image about__image">
+                            <img src="static/img/img-about.jpg" alt="Maquinaria de mineração" />
+                        </figure>
+                    </div>
+                    <div class="column is-5">
+                        <div class="about__content pl-6">
+                            <h2 class="title is-3 title--special">
+                                Especialista no mercado de mineração
+                            </h2>
+                            <p class="subtitle is-4">
+                                A InnovBrazil é uma empresa de consultoria sediada em Belém
+                            </p>
+                            <p class="about__text">
+                                A InnovBrazil desenvolveu conhecimento especializado do mercado
+                                de mineração do Norte do Brasil e estabeleceu uma ampla rede com
+                                empresas de mineração e logística mineral ativas na região.
+                            </p>
+                            <button class="button is-info">Conheça</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: About section -->
+
+        <!-- begin: Services section -->
+        <section class="section services">
+            <div class="container">
+                <div class="services__title">
+                    <h2 class="
+                      title title--special
+                      is-uppercase is-size-3
+                      has-text-danger
+                      mb-6
+                    ">
+                        Serviços
+                    </h2>
+                </div>
+                <div class="columns">
+                    <div class="column is-4">
+                        <div class="services__item has-text-centered">
+                            <img src="static/img/icons/holding-hands.svg" width="149" alt="" />
+                            <p>Representação de vendas</p>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="services__item has-text-centered">
+                            <img src="static/img/icons/marketing-charts.svg" width="115" alt="" />
+                            <p>Desenvolvimento de mercado</p>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="services__item has-text-centered">
+                            <img src="static/img/icons/cog-charts.svg" width="123" alt="" />
+                            <p>Representação de vendas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="has-text-centered mt-6">
+                    <button class="button is-danger">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+        <!-- end: Services section -->
+
+        <!-- begin: Highlight section -->
+        <section class="section highlight mt-6">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-4">
+                        <img src="https://via.placeholder.com/400" alt="" />
+                    </div>
+                    <div class="column is-4">
+                        <img src="https://via.placeholder.com/400" alt="" />
+                    </div>
+                    <div class="column is-4">
+                        <img src="https://via.placeholder.com/400" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Highlight section -->
+
+        <!-- begin: Contact section -->
+        <section class="section contact mt-6">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-6">
+                        <img src="https://via.placeholder.com/600x470" alt="" />
+                    </div>
+                    <div class="column p-6">
+                        <div class="contact__info">
+                            <h4 class="title is-size-4 is-uppercase">Contato</h4>
+                            <address class="contact__address">
+                                <strong>Edifício Empresarial Bolonha</strong> <br />
+                                Av. José Malcher, 168, sala 110
+                            </address>
+                            <p class="contact__phone">+55 (91) 98111-1762</p>
+                            <p class="contact__email">Bertram.heinze@innovbrazil.com</p>
+                            <p class="contact__working-hours">
+                                Segunda a sexta, das 9h às 18h
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Contact section -->
+    </main>
+    <!-- end: Content -->
+
+    <!-- begin: Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="footer__contact">
+                        <address class="footer__address">
+                            <strong class="has-text-white">Edifício Empresarial Bolonha</strong>
+                            <br />
+                            Av. José Malcher, 168, sala 110
+                        </address>
+                        <p class="footer__phone my-4">
+                            +55 (91) 98111-1762
+                        </p>
+                        <p class="footer__email">Bertram.heinze@innovbrazil.com</p>
+                    </div>
+                </div>
+                <div class="column has-text-centered is-flex is-align-items-center is-justify-content-center">
+                    <figure>
+                        <img src="static/img/innovbrazil-logo-pb.png" width="184" height="60" alt="" />
+                    </figure>
+                </div>
+                <div class="column is-flex is-align-items-center is-justify-content-flex-end">
+                    <div class="is-flex is-justify-content-center is-align-items-center">
+                        <a href="/">
+                            <img src="static/img/icons/instagram.svg" width="31" alt="" />
+                        </a>
+                        <a href="/" class="mx-4">
+                            <img src="static/img/icons/facebook.svg" width="28" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
