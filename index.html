@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8a603ffa06.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="static/vendor/owl-carousel2/css/docs.theme.default.min.css">
     <link rel="stylesheet" href="static/vendor/owl-carousel2/css/owl.carousel.min.css">
     <link rel="stylesheet" href="static/vendor/owl-carousel2/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="static/css/style.css">
@@ -65,24 +66,97 @@
     <!-- begin: Content -->
     <main>
         <!-- begin: Carousel -->
-        <section class="carousel">
-            <section class="hero carousel__hero is-fullheight">
+        <section class="carousel owl-carousel owl-theme" id="banner-carousel">
+            <section class="hero carousel__hero item is-fullheight">
                 <div class="overlay overlay--filter-black"></div>
                 <div class="carousel-container">
                     <figure>
-                        <img src="static/img/banner-home.jpg" style="height: 100%" alt="Some image" />
+                        <img src="static/img/carousel-alberding.jpg" style="height: 100%" alt="Some image" />
                     </figure>
                 </div>
                 <div class="hero-body">
                     <div class="container">
                         <div class="columns">
                             <div class="column is-7">
-                                <h1 class="title is-size-2">{{ currentImageTitle }}</h1>
+                                <h1 class="title is-size-2">Automated Geotechnical Monitoring</h1>
+                                <p class="subtitle is-size-3">with GPS/GNSS</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </section>
+            <section class="hero carousel__hero item is-fullheight">
+                <div class="overlay overlay--filter-black"></div>
+                <div class="carousel-container">
+                    <figure>
+                        <img src="static/img/carousel-elrich.jpg" style="height: 100%" alt="Some image" />
+                    </figure>
+                </div>
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-7">
+                                <h1 class="title is-size-2">Equipment for Mixing</h1>
+                                <p class="subtitle is-size-3">and Fine Grinding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="hero carousel__hero item is-fullheight">
+                <div class="overlay overlay--filter-black"></div>
+                <div class="carousel-container">
+                    <figure>
+                        <img src="static/img/carousel-raddata.jpg" style="height: 100%" alt="Some image" />
+                    </figure>
+                </div>
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-7">
+                                <h1 class="title is-size-2">Hyperspectral Analysis</h1>
+                                <p class="subtitle is-size-3">for Mineral Exploration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+
+            <section class="hero carousel__hero item is-fullheight">
+                <div class="overlay overlay--filter-black"></div>
+                <div class="carousel-container">
+                    <figure>
+                        <img src="static/img/carousel-wamospace.jpg" style="height: 100%" alt="Some image" />
+                    </figure>
+                </div>
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-7">
+                                <h1 class="title is-size-2">Satellite Water Monitoring</h1>
+                                <p class="subtitle is-size-3">for Mining & Agriculture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+
+            <section class="hero is-info carousel__hero item is-fullheight logos">
+                <div class="overlay overlay--filter-black"></div>
+                <div class="carousel-container">
+                    <div class="columns">
+                        <div class="column is-3 is-relative">
+                            <div class="logo-container">
+                                lalala
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
         <!-- end: Carousel -->
@@ -282,6 +356,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/vendor/owl-carousel2/js/owl.carousel.min.js"></script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/carousel-cotroller.js"></script>
 </body>
 
 </html>
