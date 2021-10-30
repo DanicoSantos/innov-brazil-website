@@ -4,3 +4,20 @@
     height: 100%;
     width: 100%;
 }
+
+/* Partners section */
+.partners {
+  margin-top: 7rem;
+}
+
+.partners .btn-info {
+    margin: 2rem 0;
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    border-radius: 0;
+}
+
+.partners .btn-info:hover {
+    background-color: transparent;
+    color: var(--primaryColor);
+}
