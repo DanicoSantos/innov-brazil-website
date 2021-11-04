@@ -54,20 +54,23 @@
 .carousel::before {
 content: "";
 position: absolute;
-width: 33.33%;
+left: 14%;
+width: 25%;
 height: 100%;
-border-right: 2px solid rgba(0, 0, 0, 0.1);
+border-right: 2px solid rgba(255, 255, 255, .20);
+border-left: 2px solid rgba(255, 255, 255, .20);
 z-index: 999999;
 }
 
 .carousel::after {
 content: "";
 position: absolute;
-right: 0;
+right: 14%;
 top: 0;
-width: 33.33%;
+width: 25%;
 height: 100%;
-border-left: 2px solid rgba(0, 0, 0, 0.1);
+border-right: 2px solid rgba(255, 255, 255, .20);
+border-left: 2px solid rgba(255, 255, 255, .20);
 z-index: 999;
 }
 .carousel-container {
