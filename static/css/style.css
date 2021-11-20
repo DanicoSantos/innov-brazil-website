@@ -218,7 +218,7 @@ z-index: 999;
 .contact__info .subtitle,
 .contact__info address,
 .contact__info strong,
-p {
+p, ol{
   color: var(--primaryColor);
 }
 

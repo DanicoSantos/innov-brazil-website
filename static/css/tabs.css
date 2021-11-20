@@ -1,0 +1,20 @@
+/* Style the buttons that are used to open the tab content */
+.tab .tablinks {
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+/* Create an active/current tablink class */
+.tab .tablinks.active {
+  border: 2px solid var(--primaryColor);
+
+}
