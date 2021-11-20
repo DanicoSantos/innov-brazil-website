@@ -11,8 +11,10 @@
  * ----------------------------------------
  */
  .puff-out-center {
-	-webkit-animation: puff-out-center 4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
-	        animation: puff-out-center 4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	-webkit-animation: puff-out-center 5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	        animation: puff-out-center 5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+        
+                transition: ease 5s;
 }
 
 @-webkit-keyframes puff-out-center {
@@ -62,8 +64,9 @@
  */
 
  .puff-in-center {
-	-webkit-animation: puff-in-center 4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: puff-in-center 4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	-webkit-animation: puff-in-center 5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                transition: ease 5s;
 }
 
 @-webkit-keyframes puff-in-center {

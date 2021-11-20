@@ -1,8 +1,7 @@
 jQuery(document).ready(function ($) {
   $("#banner-carousel").owlCarousel({
     // loop: true,
-    // smartSpeed: 450,
-    margin: 30,
+    // margin: 30,
     // nav: false,
     items: 1,
     // itemElement: "section",
