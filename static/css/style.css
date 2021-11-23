@@ -118,15 +118,16 @@ z-index: 999;
 
 .owl-theme .owl-dots {
   position: absolute;
-  right: 10rem;
-  top: 50%;
+  display: flex;
+  right: 45%;
+  bottom: 2rem;
   padding: 2rem;
-  background: rgba(133, 133, 133, 0.4);
+  background: rgba(133, 133, 133, 0.767);
   border-radius: 0.5rem;
   z-index: 10000;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -135,7 +136,7 @@ z-index: 999;
 
 .overlay--filter-black {
   background: rgba(0,0,0, 0.4);
-}
+} */
 
 .logos .carousel-container .columns {
   height: 100%;
