@@ -89,6 +89,10 @@ z-index: 999;
 .subtitle {
   text-shadow: var(--baseShadow);
 }
+.carousel__description {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
 
 .hero-body {
   position: relative;

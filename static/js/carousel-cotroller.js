@@ -10,4 +10,6 @@ jQuery(document).ready(function ($) {
     animateOut: "puff-out-center",
     animateIn: "puff-in-center",
   });
+
+   
 });
