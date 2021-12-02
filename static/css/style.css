@@ -100,7 +100,7 @@ z-index: 999;
 }
 
 .hero-body .title,
-.subtitle {
+.hero-body .subtitle {
   color: #fff;
 }
 
@@ -223,7 +223,8 @@ z-index: 999;
 .contact__info .subtitle,
 .contact__info address,
 .contact__info strong,
-p, ol{
+.contact__info p, 
+.contact__info ol{
   color: var(--primaryColor);
 }
 
