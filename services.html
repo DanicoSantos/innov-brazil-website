@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8a603ffa06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="static/vendor/owl-carousel2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/vendor/owl-carousel2/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .banner {
+            background: no-repeat right bottom;
+            background-size: cover;
+        }
+
+        .banner__hero .title,
+        .subtitle {
+            text-shadow: var(--baseShadow);
+        }
+
+        .banner__hero {
+            background: rgba(0, 0, 0, 0.4);
+            height: 645px;
+        }
+
+        .banner__background-image {
+            background-image: url("./static/img/banner-services.jpg");
+        }
+
+        .services__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            height: 80%;
+            color: var(--primaryColor);
+        }
+
+        // Services items
+
+        .services__items .title {
+            position: relative;
+        }
+
+        .services__items .title::before {
+            content: "";
+            display: block;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 85px;
+            height: 85px;
+            margin-left: 0.5rem;
+        }
+
+        .services__items-text::before {
+            content: "";
+            display: block;
+            width: 1.5rem;
+            height: 0.3rem;
+            border-top: 0.2rem solid var(--dangerColor);
+        }
+
+        .services__items-text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--grey);
+        }
+
+        .services__items .services--sales-rep .title::before {
+            background-image: url("./static/img/icons/holding-hands.svg");
+        }
+
+        .services__items .services--market-dev .title::before {
+            background-image: url("./static/img/icons/marketing-charts.svg");
+            width: 65px;
+            height: 65px;
+            margin-bottom: 0.8rem;
+            margin-left: 0.8rem;
+        }
+
+        .services__items .services--project-man .title::before {
+            background-image: url("./static/img/icons/cog-charts.svg");
+            width: 65px;
+            height: 65px;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+
+    <title>Innove Brazil | Services</title>
+</head>
+
+<body>
+    <header id="nav">
+        <!-- begin: Navbar -->
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+
+                        <img class="is-pb" src="static/img/innovbrazil-logo.png" width="150" height="30" />
+
+                        <img class="is-colored" src="static/img/innovbrazil-logo.png" width="150" height="30" />
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="/" class="navbar-item">
+                            Home
+                        </a>
+
+                        <a href="about.html" class="navbar-item">
+                            Sobre
+                        </a>
+
+                        <a href="/services" class="navbar-item">
+                            Serviços
+                        </a>
+
+                        <a href="partners.html" class="navbar-item">
+                            Parceiros
+                        </a>
+
+                        <a href="#contact" class="navbar-item">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end: Navbar -->
+    </header>
+
+    <main>
+        <section class="services">
+            <!-- begin: Banner -->
+            <div class="banner__background-image">
+                <div class="banner">
+                    <section class="hero banner__hero is-halfheight">
+                        <div class="hero-body">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column is-7">
+                                        <h1 class="title is-size-1 mb-6 has-text-white">
+                                            Nossos Serviços
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- begin: Banner -->
+
+            <!-- begin: Services -->
+            <section class="section mt-5 services__items">
+                <div class="container mb-6 services--sales-rep">
+                    <h3 class="title is-size-3 has-text-weight-normal">
+                        Representação de vendas
+                    </h3>
+                    <div class="columns">
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Desenvolvimento de relações comerciais com clientes e parcerias de
+                                cooperação tecnológica.
+                            </p>
+                        </div>
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Realização de estudos de mercado para clientes e segmentos de
+                                tecnologia específicos.
+                            </p>
+                        </div>
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Análise do potencial de mercado para novas tecnologias e soluções.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mb-5 services--market-dev">
+                    <h3 class="title is-size-3 has-text-weight-normal">
+                        Desenvolvimento de mercado
+                    </h3>
+                    <div class="columns">
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Conexão de empresas europeias com a indústria de mineração e
+                                minerais no Estado do Pará.
+                            </p>
+                        </div>
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Representação de vendas internacionais para fabricantes de
+                                equipamentos de mineração e processamento mineral no Norte do
+                                Brasil.
+                            </p>
+                        </div>
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Promoção de soluções inovadoras e econômicas para mineração e
+                                indústria no Brasil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mb-5 services--project-man">
+                    <h3 class="title is-size-3 has-text-weight-normal">
+                        Gerenciamento de progetos
+                    </h3>
+                    <div class="columns">
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Gerenciamento de projetos de cooperação internacional por meio de
+                                monitoramento de progresso personalizado
+                            </p>
+                        </div>
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Preparação de pedidos de financiamento em conjunto com parceiros
+                                locais e internacionais.
+                            </p>
+                        </div>
+                        <div class="column services__items-text is-4">
+                            <p>
+                                Relatórios financeiros e técnicos em inglês, alemão ou português.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end: Services -->
+
+            <!-- begin: Contact -->
+            <section class="section pt-0">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-8 is-offset-2 has-text-centered">
+                            <button class="button is-danger">Conheça</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end: Languages -->
+        </section>
+    </main>
+
+    <!-- begin: Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="footer__contact">
+                        <address class="footer__address">
+                            <strong class="has-text-white">Edifício Empresarial Bolonha</strong>
+                            <br />
+                            Av. José Malcher, 168, sala 110
+                        </address>
+                        <p class="footer__phone my-4">
+                            +55 (91) 98111-1762
+                        </p>
+                        <p class="footer__email">Bertram.heinze@innovbrazil.com</p>
+                    </div>
+                </div>
+                <div class="column has-text-centered is-flex is-align-items-center is-justify-content-center">
+                    <figure>
+                        <img src="static/img/innovbrazil-logo-pb.png" width="184" height="60" alt="" />
+                    </figure>
+                </div>
+                <div class="column is-flex is-align-items-center is-justify-content-flex-end">
+                    <div class="is-flex is-justify-content-center is-align-items-center">
+                        <a href="/">
+                            <img src="static/img/icons/instagram.svg" width="31" alt="" />
+                        </a>
+                        <a href="/" class="mx-4">
+                            <img src="static/img/icons/facebook.svg" width="28" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/vendor/owl-carousel2/js/owl.carousel.min.js"></script>
+    <!-- <script src="static/vendor/owl-carousel2/js/owl.animate.js"></script> -->
+    <!-- <script src="static/js/main.js"></script> -->
+    <script src="static/js/tab.js"></script>
+</body>
+
+</html>
