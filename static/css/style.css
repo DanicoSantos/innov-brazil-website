@@ -123,7 +123,7 @@ z-index: 999;
 .owl-theme .owl-dots {
   position: absolute;
   display: flex;
-  right: 45%;
+  right: 39%;
   bottom: 2rem;
   padding: 2rem;
   background: rgba(133, 133, 133, 0.767);
