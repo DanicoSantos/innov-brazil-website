@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
   $("#banner-carousel").owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 7000,
+    autoplayTimeout: 8000,
     // margin: 30,
     // nav: false,
     items: 1,
