@@ -8,9 +8,6 @@ function changeNavbarOnScroll() {
   }
 }
 
-window.onscroll = () => {
-    changeNavbarOnScroll();
-}
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   function toggleMobileMenu() {
@@ -22,10 +19,17 @@ window.onscroll = () => {
     }
   }
 
+  
+
 document.body.onload = () => {
   const mobileMenuToggler = document.querySelector("#menuToggler");
   mobileMenuToggler.addEventListener('click', () => {
     toggleMobileMenu();
-  })
+  });
+
+
+  window.onscroll = () => {
+    changeNavbarOnScroll();
+  };
 }
 

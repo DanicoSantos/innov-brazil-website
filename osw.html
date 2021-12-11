@@ -23,49 +23,7 @@
 <body>
     <header id="nav">
         <!-- begin: Navbar -->
-        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="/">
-
-                        <img class="is-pb" src="static/img/innovbrazil-logo.png" width="150" height="30" />
-
-                        <img class="is-colored" src="static/img/innovbrazil-logo.png" width="150" height="30" />
-                    </a>
-
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                        data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a href="/" class="navbar-item">
-                            Home
-                        </a>
-
-                        <a href="about.html" class="navbar-item">
-                            Sobre
-                        </a>
-
-                        <a href="services.html" class="navbar-item">
-                            Serviços
-                        </a>
-
-                        <a href="partners.html" class="navbar-item">
-                            Parceiros
-                        </a>
-
-                        <a href="#contact" class="navbar-item">
-                            Contato
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <div w3-include-html="html-partials/navbar.html"></div>
         <!-- end: Navbar -->
     </header>
 
@@ -197,45 +155,16 @@
 
     <!-- begin: Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <div class="footer__contact">
-                        <address class="footer__address">
-                            <strong class="has-text-white">Edifício Empresarial Bolonha</strong>
-                            <br />
-                            Av. José Malcher, 168, sala 110
-                        </address>
-                        <p class="footer__phone my-4">
-                            +55 (91) 98111-1762
-                        </p>
-                        <p class="footer__email">Bertram.heinze@innovbrazil.com</p>
-                    </div>
-                </div>
-                <div class="column has-text-centered is-flex is-align-items-center is-justify-content-center">
-                    <figure>
-                        <img src="static/img/innovbrazil-logo-pb.png" width="184" height="60" alt="" />
-                    </figure>
-                </div>
-                <div class="column is-flex is-align-items-center is-justify-content-flex-end">
-                    <div class="is-flex is-justify-content-center is-align-items-center">
-                        <a href="/">
-                            <img src="static/img/icons/instagram.svg" width="31" alt="" />
-                        </a>
-                        <a href="/" class="mx-4">
-                            <img src="static/img/icons/facebook.svg" width="28" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="html-partials/footer.html"></div>
     </footer>
     <!-- end: Footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/vendor/owl-carousel2/js/owl.carousel.min.js"></script>
     <!-- <script src="static/vendor/owl-carousel2/js/owl.animate.js"></script> -->
-    <!-- <script src="static/js/main.js"></script> -->
+        <script src="static/js/include.js"></script>
+    <script>includeHTML();</script>
+    <script src="static/js/main.js"></script>
 
 </body>
 
