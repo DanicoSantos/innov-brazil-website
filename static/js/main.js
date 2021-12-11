@@ -12,4 +12,20 @@ window.onscroll = () => {
     changeNavbarOnScroll();
 }
 
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function toggleMobileMenu() {
+    var x = document.getElementById("NavLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+document.body.onload = () => {
+  const mobileMenuToggler = document.querySelector("#menuToggler");
+  mobileMenuToggler.addEventListener('click', () => {
+    toggleMobileMenu();
+  })
+}
 

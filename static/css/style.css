@@ -47,6 +47,10 @@
   max-height: unset;
 }
 
+.navbar-menu {
+  transition: display 0.5s ease;
+}
+
 /* Carousel section */
 .carousel {
   position: relative;
@@ -218,7 +222,7 @@ z-index: 999;
   background-color: var(--dangerColor);
 }
 
-/* COntact section */
+/* Contact section */
 .contact__info .title,
 .contact__info .subtitle,
 .contact__info address,
@@ -278,4 +282,12 @@ z-index: 999;
 
 .button.is-info {
   background-color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 600px) {
+  
+.owl-theme .owl-dots {
+  right: 17%;
+  padding: 1rem;
+}
 }
