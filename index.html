@@ -370,10 +370,10 @@
 
         <!-- begin: Contact section -->
         <section class="section contact mt-6">
-            <div class="container">
+            <div class="container" id="contact">
                 <div class="columns">
                     <div class="column is-6">
-                        <img src="https://via.placeholder.com/600x470" alt="" />
+                        <div id="googleMaps" style="width: 600px; height: 470px"></div>
                     </div>
                     <div class="column p-6">
                         <div class="contact__info">
@@ -383,7 +383,7 @@
                                 Av. José Malcher, 168, sala 110
                             </address>
                             <p class="contact__phone">+55 (91) 98111-1762</p>
-                            <p class="contact__email">Bertram.heinze@innovbrazil.com</p>
+                            <p class="contact__email">comercial@innovbrazil.com</p>
                             <p class="contact__working-hours">
                                 Segunda a sexta, das 9h às 18h
                             </p>
@@ -408,6 +408,16 @@
     <script>includeHTML();</script>
     <script src="static/js/main.js"></script>
     <script src="static/js/carousel-cotroller.js"></script>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(-1.4523796, -48.4942239, 17),
+                zoom: 15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMaps"), mapProp);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoN0_t8fqI2b0rd2LPQhzQB-WsMBJYvhI&callback=myMap"></script>
 
 </body>
 
