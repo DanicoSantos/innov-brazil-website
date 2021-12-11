@@ -9,9 +9,32 @@ jQuery(document).ready(function ($) {
     // itemElement: "section",
     // navElement: "span",
     // dots: true,
-    animateOut: "puff-out-center",
-    animateIn: "puff-in-center",
   });
 
+  $("#partners").owlCarousel({
+    loop: true,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2,
+        margin: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: false,
+        margin: 20,
+        stagePadding: 20,
+      },
+    },
+  });
+
+  $("#highlight").owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 30,
+    nav: false,
+  })
    
 });
