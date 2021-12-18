@@ -9,7 +9,7 @@ function Translate() {
     _self = this;
     var xrhFile = new XMLHttpRequest();
     //load content data
-    xrhFile.open("GET", "lng/" + this.lng + ".json", false);
+    xrhFile.open("GET", "static/js/js-i8n/lng/" + this.lng + ".json", false);
     xrhFile.onreadystatechange = function () {
       if (xrhFile.readyState === 4) {
         if (xrhFile.status === 200 || xrhFile.status == 0) {

@@ -13,10 +13,14 @@
 --divider-thickness: 0.3rem;
 }
 
+* {
+  transition: ease-in-out 1s;
+}
+
 
 /* Navbar */
 .navbar.is-dark {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .navbar.is-dark .navbar-brand .is-pb {
@@ -217,6 +221,10 @@ z-index: 999;
   display: flex;
   justify-content: center;
   margin: 1rem auto;
+}
+
+.title--danger {
+  color: var(--dangerColor);
 }
 
 .services .title--special::after {
