@@ -72,10 +72,10 @@
         }
     </style>
 
-    <title>Innove Brazil | Services</title>
+    <title>Innove Brazil | <span lng-tag="about"></span></title>
 </head>
 
-<body>
+<body onload="translate('en','lng-tag')">
     <header id="nav">
         <!-- begin: Navbar -->
         <div w3-include-html="html-partials/navbar.html"></div>
@@ -91,7 +91,7 @@
                             <div class="container">
                                 <div class="columns">
                                     <div class="column is-7">
-                                        <h1 class="title is-size-1 mb-6 has-text-white">
+                                        <h1 class="title is-size-1 mb-6 has-text-white" lng-tag="aboutPageTitle">
                                             A vitrine para soluções e tecnologias inovadoras em mineração
                                         </h1>
                                     </div>
@@ -106,7 +106,7 @@
                 <div class="container">
                     <div class="columns">
                         <div class="column is-8 is-offset-2">
-                            <p>
+                            <p lng-tag="aboutPageFirstParagraph">
                                 A InnovBrazil é uma empresa de consultoria sediada em Belém
                                 fundada em maio de 2016 pelo Dr. Bertram Heinze, geólogo com mais
                                 de 15 anos de experiência na área de Transferência Internacional
@@ -116,10 +116,10 @@
                                 Norte do Brasil e estabeleceu uma ampla rede com empresas de
                                 mineração e logística mineral ativas na região.
                             </p>
-                            <p class="title is-size-3 has-text-centered my-6">
+                            <p lng-tag="aboutPageQuote" class="title is-size-3 has-text-centered my-6">
                                 “Somos uma empresa familiar.”
                             </p>
-                            <p>
+                            <p lng-tag="aboutPageSecondParagraph">
                                 A InnovBrazil busca se tornar a referência número um em soluções
                                 inovadoras para a indústria de mineração no Norte do Brasil. Nosso
                                 foco está no Estado do Pará, onde grandes investimentos em novos
@@ -145,7 +145,7 @@
                         </div>
                         <div class="column is-6">
                             <div class="about__content pl-6">
-                                <p class="title is-size-2 has-text-weight-normal">
+                                <p lng-tag="aboutPageCeoSectionTitle" class="title is-size-2 has-text-weight-normal">
                                     Bertram Heinze (Ph.D.), alemão, geólogo por formação, com 15
                                     anos de experiência em relações externas para o setor público de
                                     pesquisa e a indústria de mineração privada.
@@ -162,14 +162,14 @@
                 <div class="container">
                     <div class="columns">
                         <div class="column is-8 is-offset-2">
-                            <p>
+                            <p lng-tag="aboutPageThirdParagraph">
                                 Criou e atuou como diretor do Helmholtz Office Moscow e da Casa
                                 Alemã de Ciência e Inovação, São Paulo (@AHK São Paulo); De 2011 a
                                 2016 constituiu e chefiou o Departamento de Relações Externas e
                                 Projetos de Pesquisa do Instituto Tecnológico Vale em Belém, Pará,
                                 Brasil.
                             </p>
-                            <p class="mt-6">
+                            <p lng-tag="aboutPageFourthParagraph" class="mt-6">
                                 Em 2016 Bertram fundou a InnovBrazil com foco no desenvolvimento
                                 de novas oportunidades de negócios para empresas europeias no
                                 Norte do Brasil, o pólo de mineração de mais rápido crescimento na
@@ -200,7 +200,7 @@
                 <div class="container">
                     <div class="columns">
                         <div class="column is-8 is-offset-2 has-text-centered">
-                            <p class="title is-size-4 has-text-weight-normal">
+                            <p lng-tag="aboutPageServicesOptionsSectionTitle" class="title is-size-4 has-text-weight-normal">
                                 Oferecemos serviços em inglês, português e alemão.
                             </p>
                             <div class="
@@ -239,7 +239,8 @@
         <script src="static/js/include.js"></script>
     <script>includeHTML();</script>
     <script src="static/js/main.js"></script>
-    <script src="static/js/tab.js"></script>
+    <script src="static/js/js-i8n/translate.js"></script>
+    <script src="static/js/js-i8n/index.js"></script>
 </body>
 
 </html>
