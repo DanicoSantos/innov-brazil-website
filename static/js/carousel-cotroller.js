@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
     loop: true,
     autoplay: true,
     autoplayTimeout: 8000,
+    autoplaySpeed: 2000,
     // margin: 30,
     // nav: false,
     items: 1,
