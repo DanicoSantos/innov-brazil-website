@@ -22,13 +22,12 @@ jQuery(document).ready(function ($) {
     }
   }
   const mobileMenuToggler = document.querySelector("#menuToggler");
-  mobileMenuToggler.addEventListener('click', () => {
-    toggleMobileMenu();
-  });
 
+  if (mobileMenuToggler) {
+    mobileMenuToggler.addEventListener("click", () => {
+      toggleMobileMenu();
+    });
+  }
 
-  window.onscroll = () => {
-    // changeNavbarOnScroll();
-  };
 });
 

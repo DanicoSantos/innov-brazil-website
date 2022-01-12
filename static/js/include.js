@@ -21,6 +21,17 @@ function includeHTML() {
           /* Remove the attribute, and call this function once more: */
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
+          //This is id of HTML element (English) with attribute lng-tag
+          $("#enTranslator").click(function (event) {
+            event.preventDefault();
+
+            translate("en", "lng-tag");
+          });
+          //This is id of HTML element (Khmer) with attribute lng-tag
+          $("#ptTranslator").click(function (event) {
+            event.preventDefault();
+            translate("pt", "lng-tag");
+          });
         }
       };
       xhttp.open("GET", file, true);

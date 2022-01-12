@@ -13,12 +13,5 @@ function translate(lng, tagAttr) {
 }
 
 $(document).ready(function () {
-  //This is id of HTML element (English) with attribute lng-tag
-  $("#enTranslator").click(function () {
-    translate("en", "lng-tag");
-  });
-  //This is id of HTML element (Khmer) with attribute lng-tag
-  $("#ptTranslator").click(function () {
-    translate("pt", "lng-tag");
-  });
+  
 });
