@@ -120,7 +120,26 @@
     "partnerRadDataSeventhBulletPoint": "",
     "partnerRadDataEighthBulletPoint": "",
     "partnerRadDataNinethBulletPoint": "",
-    "partnerRadDataTenthBulletPoint": ""
+    "partnerRadDataTenthBulletPoint": "",
+    "partnerWamospaceTitle": "WAMOSPACE",
+    "partnerWamospaceSubtitle": "",
+    "partnerWamospaceFirstParagraphTitle": "<b>GESTÃO DE RISCO HIDROLÓGICO</b>",
+    "partnerWamospaceSecondParagraphTitle": "<b>PREVISÃO DE SECA AGRÍCOLA</b>",
+    "partnerWamospaceThirdParagraphTitle": "<b>MONITORAMENTO PARA USINAS HIDRELÈTRICAS</b>",
+    "partnerWamospaceFirstParagraph": "Proteger comunidades e infraestrutura crítica de riscos hidrológicos é uma tarefa altamente responsável para os gestores de água. WaMoSpace fornece informações precoces e sólidas sobre o acúmulo de água com atualizações diárias para bacias inteiras de uma só vez.",
+    "partnerWamospaceSecondParagraph": "Um dos maiores desafios do agronegócio são as perdas de safra por conta das estiagens. O WaMoSpace ajuda você a <b>detectar e prever a escassez de água antes que as estações meteorológicas comuns percebam</b>. Fornecemos informações regionais e específicas para fazendas sem a necessidade de CAPEX adicional.",
+    "partnerWamospaceThirdParagraph": "Os preços da energia hidrelétrica estão altamente correlacionados com a Disponibilidade Total de Água (TWS) regional. Medições precisas por satélite de sub-mercados integrais podem, portanto, fornecer percepções inteligentes sobre os preços de energia futuros, permitindo uma estratégia de preços otimizada e antecipada. WaMoSpace fornece monitoramento contínuo de influxo de água para qualquer local, região ou sub-mercado desejado no Brasil.",
+    "partnerWamospaceFourthParagraph": "<a href='www.wamospace.com'>(www.wamospace.com)</a>",
+    "partnerWamospaceFirstBulletPoint": "Fator de risco de <b>enchente súbita</b> atualizado a cada 5 dias para todos os locais do Brasil",
+    "partnerWamospaceSecondBulletPoint": "Coleta de dados diária <b>independente de nuvem ou cobertura do solo</b>",
+    "partnerWamospaceThirdBulletPoint": "<b>Monitoramento da escassez de água</b> sem a necessidade de instalar instrumentação no solo",
+    "partnerWamospaceFourthBulletPoint": "<b>Detectar mudanças na água subterrânea</b> com mais antecedência e com precisão",
+    "partnerWamospaceFifthBulletPoint": "<b>Encontrar recursos hídricos</b> usando GRACE e dados adicionais de outros satélites",
+    "partnerWamospaceSixthBulletPoint": "<b>Dados rápidos e precisos</b> para áreas inteiras de captação",
+    "partnerWamospaceSeventhBulletPoint": "<b>Previsão de fluxo</b> de entrada aprimorada por meio de medição integral",
+    "partnerWamospaceEighthBulletPoint": "",
+    "partnerWamospaceNinethBulletPoint": "",
+    "partnerWamospaceTenthBulletPoint": ""
     
 
 
