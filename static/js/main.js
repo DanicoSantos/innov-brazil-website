@@ -1,16 +1,10 @@
 jQuery(document).ready(function ($) {
-  function changeNavbarOnScroll() {
-    const navbar = document.getElementById("nav");
+  const mobileMenuToggler = document.querySelector("#menuToggler");
+  const lngQueryString = location.search;
 
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      navbar.querySelector(".navbar").classList.remove("is-dark");
-    } else {
-      navbar.querySelector(".navbar").classList.add("is-dark");
-    }
-  }
+  if (!lngQueryString) {
+    location.search = "en";
+  }   
 
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   function toggleMobileMenu() {
@@ -21,7 +15,6 @@ jQuery(document).ready(function ($) {
       x.style.display = "block";
     }
   }
-  const mobileMenuToggler = document.querySelector("#menuToggler");
 
   if (mobileMenuToggler) {
     mobileMenuToggler.addEventListener("click", () => {
