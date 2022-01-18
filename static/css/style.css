@@ -59,28 +59,7 @@
 .carousel {
   position: relative;
 }
-.carousel::before {
-content: "";
-position: absolute;
-left: 14%;
-width: 25%;
-height: 100%;
-border-right: 2px solid rgba(77, 76, 76, 0.20);
-border-left: 2px solid rgba(77, 76, 76, 0.20);
-z-index: 999999;
-}
 
-.carousel::after {
-content: "";
-position: absolute;
-right: 14%;
-top: 0;
-width: 25%;
-height: 100%;
-border-right: 2px solid rgba(77, 76, 76, 0.20);
-border-left: 2px solid rgba(77, 76, 76, 0.20);
-z-index: 999;
-}
 .carousel-container {
   position: absolute;
   width: 100%;
@@ -310,9 +289,14 @@ z-index: 999;
 @media only screen and (max-width: 600px) {
   
 .carousel.owl-theme .owl-dots {
-  right: 23%;
+  right: 14%;
   padding: 1rem;
 }
+
+.carousel .is-hidden-tablet {
+  height: 689px;
+}
+
 .partners {
   margin-top: 1rem;
   margin-bottom: 1rem;
