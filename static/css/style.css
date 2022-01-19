@@ -62,14 +62,14 @@
 
 .carousel-container {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 1366px;
+  height: 645px;
   z-index: 9998;
 }
 
 .carousel-container figure {
-  width: 100%;
-  height: 100%;
+  width: 1366px;
+  height: 645px;
 }
 
 .carousel__hero .title,
@@ -111,7 +111,7 @@
   position: absolute;
   display: flex;
   right: 39%;
-  bottom: 2rem;
+  bottom: 10rem;
   padding: 2rem;
   background: rgba(133, 133, 133, 0.767);
   border-radius: 0.5rem;
@@ -286,19 +286,53 @@
   background-color: var(--primaryColor);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+
+  .carousel-container {
+    padding-top: 4rem;
+    width: 375px;
+    height: 250px;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
   
-.carousel.owl-theme .owl-dots {
-  right: 14%;
-  padding: 1rem;
-}
+  .carousel-container figure {
+    width: 375px;
+    height: 200px;
+  }
 
-.carousel .is-hidden-tablet {
-  height: 689px;
-}
+  .carousel.owl-carousel button.owl-dot > span {
+    width: 5px;
+    height: 5px;
+    padding: 1px;
+  }
+  
+  .carousel.owl-theme .owl-dots {
+    right: 30%;
+    bottom: -55%;
+    padding: 1rem;
+  }
 
-.partners {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  .hero-body {
+    bottom: -5rem;
+  }
+
+  .carousel__description {
+    padding: 1rem;
+  }
+
+  .carousel .is-size-2 {
+    font-size: 1.2rem !important;
+  }
+
+  .carousel .is-size-3 {
+    font-size: 0.8rem !important;
+  }
+
+  .partners {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
 }

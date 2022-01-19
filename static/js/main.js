@@ -29,7 +29,13 @@ jQuery(document).ready(function ($) {
   if (mobileMenuToggler) {
     mobileMenuToggler.addEventListener("click", () => {
       toggleMobileMenu();
-    });
+    });    
+
+    console.log(mobileMenuToggler)
+  } else {
+    $('.carousel__hero').each(function() {
+      $(this).addClass('is-fullheight')
+    })
   }
 
 });
