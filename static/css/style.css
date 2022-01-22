@@ -84,6 +84,10 @@
   width: 100%;
 }
 
+.carousel__description.carousel__description--logos {
+  top: 12%;
+}
+
 .carousel__description .title, .carousel__description .subtitle {
   color: #fff;
 }
