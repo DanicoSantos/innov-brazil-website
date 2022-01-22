@@ -340,6 +340,10 @@
     padding-left: 2rem;
   }
 
+  .carousel__description.carousel__description--logos {
+    top: 1%;
+  }
+
   .carousel__description .column{
     padding: 1rem;
   }
