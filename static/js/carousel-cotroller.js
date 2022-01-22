@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
   $("#banner-carousel").owlCarousel({
     loop: true,
     autoplay: false,
-    center: true,
     autoplayTimeout: 8000,
     autoplaySpeed: 2000,
     // margin: 30,
