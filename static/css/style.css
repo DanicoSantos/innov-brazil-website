@@ -62,13 +62,13 @@
 
 .carousel-container {
   position: absolute;
-  width: 1366px;
+  width: 100%;
   height: 645px;
   z-index: 9998;
 }
 
 .carousel-container figure {
-  width: 1366px;
+  width: 100%;
   height: 645px;
 }
 
@@ -76,9 +76,20 @@
 .subtitle {
   text-shadow: var(--baseShadow);
 }
+
 .carousel__description {
-  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.carousel__description .title, .carousel__description .subtitle {
+  color: #fff;
+}
+
+.carousel__description .column {
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-body {
@@ -111,7 +122,7 @@
   position: absolute;
   display: flex;
   right: 39%;
-  bottom: 20%;
+  bottom: 25%;
   padding: 2rem;
   background: rgba(133, 133, 133, 0.767);
   border-radius: 0.5rem;
@@ -288,14 +299,14 @@
 
 @media only screen and (max-width: 480px) {
 
+  .carousel {
+    top: 65px;
+  }
+
   .carousel-container {
     padding-top: 4rem;
     width: 100%;
     height: 250px;
-  }
-
-  .owl-carousel .owl-stage-outer {
-    overflow: visible;
   }
   
   .carousel-container figure {
@@ -311,7 +322,6 @@
   
   .carousel.owl-theme .owl-dots {
     right: 30%;
-    bottom: -50%;
     padding: 0.5rem;
     background-color: rgba(230, 233, 232, 0.377);
   }
@@ -325,6 +335,12 @@
   }
 
   .carousel__description {
+    top: 25%;
+    width: 80%;
+    padding-left: 2rem;
+  }
+
+  .carousel__description .column{
     padding: 1rem;
   }
 
@@ -337,12 +353,12 @@
   }
 
   .partners {
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 0;
   }
 
   .partners.section {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 0;
   }
 
