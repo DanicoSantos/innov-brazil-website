@@ -1,5 +1,10 @@
 // Include html code
 function includeHTML() {
+
+  // Add menu toggler click event listener
+  const mobileMenuToggler = $("#menuToggler");
+
+
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
@@ -20,14 +25,14 @@ function includeHTML() {
           }
           /* Remove the attribute, and call this function once more: */
           elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-          
+          includeHTML();          
+
           //This is id of HTML element (English) with attribute lng-tag
           $("#enTranslator").click(function (event) {
             event.preventDefault();
             translate("en", "lng-tag");
             location.search = "en";
-          });          
+          });
           //This is id of HTML element (Khmer) with attribute lng-tag
           $("#ptTranslator").click(function (event) {
             event.preventDefault();
@@ -35,9 +40,9 @@ function includeHTML() {
             location.search = "pt";
           });
 
-          $("[href='#contact']").click(function(event) {
-            const lngQueryString = location.search;            
-            location.href ='/' + lngQueryString + '#contact';
+          $("[href='#contact']").click(function (event) {
+            const lngQueryString = location.search;
+            location.href = '/' + lngQueryString + '#contact';
           })
 
           translate(location.search.replace('?', ''), 'lng-tag');
@@ -47,6 +52,12 @@ function includeHTML() {
       xhttp.send();
       /* Exit the function: */
       return;
-    }
+    } 
+  }
+
+  if (mobileMenuToggler) {
+    mobileMenuToggler.click(function() {
+      $('#NavLinks').toggle();
+    })
   }
 }
