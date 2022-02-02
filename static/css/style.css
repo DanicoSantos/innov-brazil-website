@@ -304,6 +304,10 @@
 
 @media only screen and (max-width: 480px) {
 
+  .title--special::after {
+    border-color: transparent;
+  }
+
   .carousel {
     top: 65px;
   }
