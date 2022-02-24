@@ -127,7 +127,7 @@
   position: absolute;
   display: flex;
   right: 39%;
-  bottom: 1%;
+  bottom: 7%;
   padding: 2rem;
   background: rgba(133, 133, 133, 0.767);
   border-radius: 0.5rem;
@@ -303,6 +303,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+  .title--special::after {
+    border-color: transparent;
+  }
 
   .carousel {
     top: 65px;
